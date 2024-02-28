@@ -42,7 +42,7 @@ client.request();
 // Optionally abort the request
 client.abort()
 // Optionally send the request again
-client.abort()
+client.request()
 ```
 
 ### Usage with Server Sent Events
