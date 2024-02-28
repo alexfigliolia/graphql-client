@@ -59,7 +59,7 @@ const subscription = GQLSubscription<Subscription, Variables>({
 subscription.onData(data => {});
 
 // subscribe to incoming errors
-subscription.onData(error => {});
+subscription.onError(error => {});
 
 // unsubscribe 
 subscription.close();
