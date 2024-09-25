@@ -16,7 +16,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "npx ts-packager -e src/index.ts",
-    "lint": "ts-node ci/commands/Lint.ts",
+    "lint": "tsx ci/commands/Lint.ts",
     "test": "jest"
   },
   "keywords": [
@@ -33,9 +33,8 @@
     "graphql-sse": "^2.5.2"
   },
   "devDependencies": {
-    "@figliolia/child-process": "^1.0.3",
-    "@figliolia/ts-packager": "^1.0.6",
-    "@swc/core": "^1.3.107",
+    "@figliolia/child-process": "^1.0.4",
+    "@figliolia/ts-packager": "^1.1.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.16",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
@@ -51,14 +50,14 @@
     "prettier": "^3.2.5",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
     "typescript": "^5.3.3"
   },
   "resolutions": {
     "graphql": "^16.0.0"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "homepage": "https://github.com/alexfigliolia/graphql-client#readme",
   "repository": "https://github.com/alexfigliolia/graphql-client.git"
